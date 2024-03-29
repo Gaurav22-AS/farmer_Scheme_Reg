@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"   crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+  <title>E-Agriculture Schemes</title>
+</head>
+<body>
+  <section>
+    <div class="navigation-bar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Registration for Agriculture Schemes</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active  navl">
+        <a class="nav-link" href="Homepage.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="DataEntry.html">Data Entry</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Data</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+    </ul>
+    
+  </div>
+</nav>
+    </div>
+  </section>
+  <!-- navigation ends here -->
+  <div class="container">
+      <div class="employee-data" align="center">
+        <h1>DATA-ENTRY</h1> 
+        <div class="form-employee">
+          <form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4" >Farmer name</label>
+      <input type="text" class="form-control" id="empname">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Farmer Id</label>
+      <input type="text"  class="form-control" id="empid">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="address" placeholder="Sadashiv Peth">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">land Type </label>
+      <select type="text" class="form-control" id="designation">
+        <option >Fertile</option>
+        <option >With less Water</option>
+      </select>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">District</label>
+      <select id="department" class="form-control">
+        <option selected disabled>Choose your state</option>
+        <option>Maharashtra</option>
+        <option>MadhyaPradesh</option>
+        <option>Gujrat</option>
+        <option>Chhatisgarh</option>
+        <option>UttarPradesh</option>
+        <option>Odisha</option>
+        <option>Rajsthan</option>
+        <option>Karnatka</option>
+
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Subsidy</label>
+      <input type="text" class="form-control" id="salary">
+    </div>
+  </div>
+ 
+  <button type="button" class="btn btn-primary" onclick="employeeDataManagement()">SUBMIT</button>
+</form>
+        </div>
+        <!-- form div ends here -->
+      </div>
+     
+  </div>
+   <section class="data">
+        <div class="data-container" align="center">
+          
+          <div class="table-container">
+        <table class="table table-striped" id="employee-table">
+              <thead>
+                <tr>
+                  <th scope="col">Farmer Name</th>
+                  <th scope="col">Farmer ID</th>
+                  <th scope="col">Land Type</th>
+                  <th scope="col">State</th>
+                  <th scope="col">subsidy</th>
+                  <th scope="col">Address</th>
+                  <th scope="col">Actions</th>
+                  
+                </tr>
+              </thead>
+            <tbody id="table-body">
+   
+         </tbody>
+       </table>
+      </div>
+          <!-- table con div ends here -->
+   </div>
+  </section>
+  
+
+      <script type="text/javascript" src="dataEntry.js"></script>
+</body>
+</html>
